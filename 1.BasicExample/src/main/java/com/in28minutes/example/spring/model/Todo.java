@@ -8,8 +8,12 @@ public class Todo {
 	private Date date;
 	private boolean isDone;
 
-	public Todo(String desc, Date date, boolean isDone) {
+	public Todo() {
 		super();
+	}
+
+	public Todo(String desc, Date date, boolean isDone) {
+		this();
 		this.desc = desc;
 		this.date = date;
 		this.isDone = isDone;
