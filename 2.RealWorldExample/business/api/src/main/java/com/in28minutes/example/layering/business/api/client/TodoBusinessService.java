@@ -5,5 +5,5 @@ import java.util.List;
 import com.in28minutes.example.layering.model.api.client.Todo;
 
 public interface TodoBusinessService {
-	List<Todo> retrieveTodosForNextWeek(String user);
+	List<Todo> retrieveTodosRelatedToSpring(String user);
 }

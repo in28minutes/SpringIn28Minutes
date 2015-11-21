@@ -23,8 +23,7 @@ public class TodoBusinessServiceStubTest {
 	@Test
 	public void testClientProductSum() {
 		List<Todo> todos = todoBusinessService
-				.retrieveTodosForNextWeek("dummyUser");
+				.retrieveTodosRelatedToSpring("dummyUser");
 		assertEquals(2, todos.size());
 	}
-
 }

@@ -2,7 +2,6 @@ package com.in28minutes.spring.example1;
 
 import static org.junit.Assert.assertEquals;
 
-import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -23,54 +22,61 @@ class SpringContext {
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringContext.class)
-public class TodoBusinessTestFinal {
+public class TodoBusinessTest {
 	
 	@Autowired
-	TodoBusinessServiceImpl todoBusinessServiceImpl;
+	TodoBusinessService businessService;
 	
 	@Test
 	public void testGetTodosAboutSpring(){
-		
-		List<String> todosAboutSpring = todoBusinessServiceImpl.getTodosAboutSpring();
-		assertEquals(1,todosAboutSpring.size());
+		List<String> todos = businessService.retrieveTodosRelatedToSpring("Ranga");
+		assertEquals(1,todos.size());
+		assertEquals("Learn Spring",todos.get(0));
 	}
 }
 
+
 @Component
-class TodoBusinessServiceImpl {
+class TodoBusinessService{
 	
 	@Autowired
-	TodoDataService todoDataServiceImpl;
+	TodoDataService dataService ;//= new TodoDataServiceStub()
 	
-	List<String> getTodosAboutSpring(){
-		List<String> todos = todoDataServiceImpl.getTodos();
-		List<String> todosAboutSpring = new ArrayList<String>();
+	List<String> retrieveTodosRelatedToSpring(String user){
+		List<String> todosRelatedToSpring = new ArrayList<String>();
+		
+		List<String> todos = dataService.retrieveTodos(user);
+		
 		for(String todo:todos){
-			if(todo.contains("Spring"))
-				todosAboutSpring.add(todo);
+			if(todo.contains("Spring")){
+				todosRelatedToSpring.add(todo);
+			}
 		}
-		return todosAboutSpring;
+		return todosRelatedToSpring;
+	}
+	
+}
+
+class TodoDataServiceStub implements TodoDataService{
+	public List<String> retrieveTodos(String user){
+		return Arrays.asList("Learn Spring","Learn Struts","Learn to Dance");
 	}
 }
 
-interface TodoDataService {
-	List<String> getTodos();
+interface TodoDataService{
+	List<String> retrieveTodos(String user);
 }
 
 @Component
-class TodoDataServiceStubImpl  implements TodoDataService{
-	Connection jdbcConnection;
-	public List<String> getTodos() {
-		//make a call;
-		return new ArrayList<String>();
+class TodoDataServiceRealImpl implements TodoDataService{
+	public List<String> retrieveTodos(String user){
+		return Database.retrieveTodos(user);
 	}
 }
 
-@Component
-class TodoDataServiceRealImpl implements TodoDataService {
-	Connection jdbcConnection;
-	public List<String> getTodos() {
-		return Arrays.asList("Learn Spring","Learn Struts");
+class Database{
+	static List<String> retrieveTodos(String user){
+		throw new RuntimeException("Database Down");
+		//return Arrays.asList("Learn Spring","Learn Struts","Learn to Dance");
 	}
 }
-
