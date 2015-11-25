@@ -8,7 +8,7 @@
     </parent>
 
     <packaging>jar</packaging>
-    <artifactId>in28minutes-multi-module-model</artifactId>
+    <artifactId>in28minutes-spring-real-world-model</artifactId>
     <name>${project.artifactId}</name>
     <description>Model Layer Project.</description>
 </project>

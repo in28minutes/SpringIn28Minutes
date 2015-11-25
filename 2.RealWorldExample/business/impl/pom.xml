@@ -5,32 +5,32 @@
 
 	<parent>
 		<groupId>com.in28minutes.example.layering</groupId>
-		<artifactId>in28minutes-multi-module-business</artifactId>
+		<artifactId>in28minutes-spring-real-world-business</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<packaging>jar</packaging>
-	<artifactId>in28minutes-multi-module-business-impl</artifactId>
+	<artifactId>in28minutes-spring-real-world-business-impl</artifactId>
 	<name>${project.artifactId}</name>
 	<description>Business Implementation.</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.in28minutes.example.layering</groupId>
-			<artifactId>in28minutes-multi-module-model</artifactId>
+			<artifactId>in28minutes-spring-real-world-model</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.in28minutes.example.layering</groupId>
-			<artifactId>in28minutes-multi-module-data-api</artifactId>
+			<artifactId>in28minutes-spring-real-world-data-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.in28minutes.example.layering</groupId>
-			<artifactId>in28minutes-multi-module-data-impl</artifactId>
+			<artifactId>in28minutes-spring-real-world-data-impl</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.in28minutes.example.layering</groupId>
-			<artifactId>in28minutes-multi-module-business-api</artifactId>
+			<artifactId>in28minutes-spring-real-world-business-api</artifactId>
 		</dependency>
 
 		<dependency>
