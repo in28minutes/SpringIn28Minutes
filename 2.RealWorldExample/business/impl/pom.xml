@@ -25,6 +25,11 @@
 		</dependency>
 		<dependency>
 			<groupId>com.in28minutes.example.layering</groupId>
+			<artifactId>in28minutes-multi-module-data-impl</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.in28minutes.example.layering</groupId>
 			<artifactId>in28minutes-multi-module-business-api</artifactId>
 		</dependency>
 
@@ -46,6 +51,10 @@
 			<artifactId>spring-context-support</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
         <!-- Test Specific Dependencies -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -58,6 +67,6 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-        </dependency>        
+        </dependency>  
 	</dependencies>
 </project>

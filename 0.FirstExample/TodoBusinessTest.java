@@ -16,6 +16,6 @@ class SpringContext {
 @ContextConfiguration(classes = SpringContext.class)
 public class TodoBusinessTest {
 	@Test
-	public void testGetTodosAboutSpring(){
+	public void testGetTodosAboutSpring() {
 	}
 }
