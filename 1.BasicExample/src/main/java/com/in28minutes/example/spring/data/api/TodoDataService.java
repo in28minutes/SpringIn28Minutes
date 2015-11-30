@@ -1,4 +1,4 @@
-package com.in28minutes.example.spring.data;
+package com.in28minutes.example.spring.data.api;
 
 import java.util.List;
 

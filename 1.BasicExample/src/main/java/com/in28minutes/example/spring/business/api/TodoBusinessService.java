@@ -1,4 +1,4 @@
-package com.in28minutes.example.spring.business;
+package com.in28minutes.example.spring.business.api;
 
 import java.util.List;
 

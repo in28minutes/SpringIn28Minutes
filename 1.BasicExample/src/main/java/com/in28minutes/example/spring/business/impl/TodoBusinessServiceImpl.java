@@ -1,4 +1,4 @@
-package com.in28minutes.example.spring.business;
+package com.in28minutes.example.spring.business.impl;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,7 +7,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.in28minutes.example.spring.data.TodoDataService;
+import com.in28minutes.example.spring.business.api.TodoBusinessService;
+import com.in28minutes.example.spring.data.api.TodoDataService;
 import com.in28minutes.example.spring.model.Todo;
 
 @Component

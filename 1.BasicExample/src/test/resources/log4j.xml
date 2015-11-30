@@ -10,13 +10,8 @@
         </layout>
     </appender>
     
-    <logger name="org.springframework" additivity="false">
-        <level value="DEBUG"/>
-        <appender-ref ref="STDOUT"/>
-    </logger>
-
     <root>
-        <level value="DEBUG"/>
+        <level value="ERROR"/>
         <appender-ref ref="STDOUT"/>
     </root>
 

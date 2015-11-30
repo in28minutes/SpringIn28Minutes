@@ -1,8 +1,7 @@
-package com.in28minutes.example.spring.business;
+package com.in28minutes.example.spring.business.xml;
 
 import static org.junit.Assert.assertNotNull;
 
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +27,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.in28minutes.example.spring.model.Todo;
 
 @Configuration
-@ComponentScan(basePackages = { "com.in28minutes.example" })
+@ComponentScan(basePackages = { "com.in28minutes.example.spring.business.xml" })
 class SpringXmlContext {
 	@Bean
 	public Marshaller marshaller() {
@@ -60,18 +59,25 @@ public class TodoXmlConversionTest {
 	@Test
 	public void testXMLMarshalling() throws XmlMappingException, IOException {
 		OutputStream outputStream = new FileOutputStream("./output.xml");
-		Todo todo = new Todo("Complete Spring Tutorial", new Date(), false);
+		Todo todo = new Todo("Complete Spring Tutorial - Current", new Date(),
+				false);
 		marshaller.marshal(todo, new StreamResult(outputStream));
 		outputStream.close();
 	}
 
 	@Test
 	public void testXMLUnMarshalling() throws XmlMappingException, IOException {
-		InputStream inputStream = 
-		ClassLoader.getSystemResourceAsStream("input.xml");
-		Todo todo = (Todo) unmarshaller.unmarshal(new StreamSource(inputStream));
+		InputStream inputStream = ClassLoader
+				.getSystemResourceAsStream("input.xml");
+		Todo todo = (Todo) unmarshaller
+				.unmarshal(new StreamSource(inputStream));
+		System.out.println(todo);
 		inputStream.close();
 		assertNotNull(todo);
+		/*
+		 * Todo [desc=Complete Spring Tutorial Example 1, date=Mon Nov 16
+		 * 09:36:18 IST 2015, isDone=true]
+		 */
 	}
 
 }

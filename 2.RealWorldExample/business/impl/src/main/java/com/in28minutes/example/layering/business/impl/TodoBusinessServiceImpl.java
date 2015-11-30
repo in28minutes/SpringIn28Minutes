@@ -19,8 +19,20 @@ public class TodoBusinessServiceImpl implements TodoBusinessService {
 
 	@Override
 	public List<Todo> retrieveTodosRelatedToSpring(String user) {
+
+		System.out
+				.println("retrieveTodosRelatedToSpring is called with parameter "
+						+ user);
+
 		List<Todo> todos = todoDs.retrieveTodos(user);
-		return filterTodosRelatedToSpring(todos);
+		List<Todo> filteredTodos = filterTodosRelatedToSpring(todos);
+
+		System.out
+		.println("retrieveTodosRelatedToSpring completed execution and returned "
+				+ filteredTodos);
+
+		return filteredTodos;
+
 	}
 
 	// NOTE : We get everything from database and filter

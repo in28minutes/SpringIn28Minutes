@@ -1,17 +1,28 @@
 package com.in28minutes.jdbc.data.service;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 
 import com.in28minutes.jdbc.hsql.HsqlDatabase;
 import com.in28minutes.jdbc.model.Todo;
+
+class TodoMapper implements RowMapper<Todo> {
+	public Todo mapRow(ResultSet rs, int rowNum) throws SQLException {
+		Todo todo = new Todo();
+		todo.setId(rs.getInt(1));
+		todo.setDescription(rs.getString(2));
+		todo.setDone(rs.getBoolean(3));
+		return todo;
+	}
+}
 
 public class TodoDataServiceSpringJdbc {
 
@@ -44,9 +55,19 @@ public class TodoDataServiceSpringJdbc {
 	}
 
 	public List<Todo> retrieveAllTodos() throws SQLException {
-		return jdbcTemplate.query(SELECT_ALL_TODOS,
-				new BeanPropertyRowMapper<Todo>(Todo.class));
+		return jdbcTemplate.query(SELECT_ALL_TODOS, new TodoMapper());
 	}
+
+	/*
+	 * com.in28minutes.jdbc.data.service.TodoDataServiceSpringJdbc [Todo [id=0,
+	 * description=Spring Tutorial, isDone=false], Todo [id=2,
+	 * description=Struts Tutorials, isDone=false], Todo [id=3, description=Make
+	 * a List, isDone=false], Todo [id=23, description=New Todo Spring JDBC,
+	 * isDone=false], Todo [id=24, description=New Todo Spring JDBC,
+	 * isDone=false], Todo [id=25, description=New Todo Spring JDBC,
+	 * isDone=false], Todo [id=26, description=New Todo fasdf1, isDone=false],
+	 * Todo [id=27, description=New Todo Spring JDBC, isDone=false]]
+	 */
 
 	/*
 	 * class TodoMapper implements RowMapper<Todo> { public Todo
