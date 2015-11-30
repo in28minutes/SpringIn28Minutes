@@ -1,6 +1,9 @@
 # Spring Tutorial for Beginners - with Examples - in28Minutes
 Learn Spring from in28Minutes
 
+##Installing All the Examples of this tutorial
+https://youtu.be/0dINCMLIyHo
+
 ##Installing Java Eclipse and Maven
 https://github.com/in28minutes/SpringIn28Minutes/blob/master/InstallationGuide-JavaEclipseAndMaven_v2.pdf
 
