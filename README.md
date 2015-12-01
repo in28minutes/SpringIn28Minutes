@@ -4,6 +4,12 @@ Learn Spring from in28Minutes
 ##Installing All the Examples of this tutorial
 https://youtu.be/0dINCMLIyHo
 
+##Video Tutorials
+Spring Tutorial For Beginners - using Maven and Eclipse : https://www.youtube.com/watch?v=24rGqtxuLhc
+Spring Dependency Injection - with Unit Testing : https://www.youtube.com/watch?v=bc7frTK8LhI
+Spring AOP Tutorial - with Aspectj Examples : https://www.youtube.com/watch?v=Og9Fyew8ltQ
+Spring JDBC Tutorial  - with Examples : https://www.youtube.com/watch?v=1WgsDP10iqw
+
 ##Installing Java Eclipse and Maven
 https://github.com/in28minutes/SpringIn28Minutes/blob/master/InstallationGuide-JavaEclipseAndMaven_v2.pdf
 
