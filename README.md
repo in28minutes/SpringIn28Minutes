@@ -1,5 +1,4 @@
 # Spring Tutorial for Beginners - with Examples - in28Minutes
-###Learn Spring from in28Minutes
 
 	- [Running Examples](#)
 	- [Video Tutorials](#)
@@ -9,10 +8,10 @@
 	- [TOC](#)
 		- [Section 1 Introduction](#)
 		- [Section 2  Why is Spring Popular?](#)
-		- [Section 3  First Example](#)
-		- [Section 4  Basic Concepts](#)
+		- [Section 3  First Example](#)
+		- [Section 4  Basic Concepts](#)
 		- [Section 5 Real world Example](#)
-		- [Section 6  Advanced Concepts](#)
+		- [Section 6  Advanced Concepts](#)
 		- [Section 7  Spring Modules](#)
 		- [Section 8 Spring in Real World](#)
 		- [Section 9 Let's meet again](#)
