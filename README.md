@@ -1,11 +1,13 @@
 # Spring Tutorial for Beginners - with Examples - in28Minutes
 
 ##Video Tutorials
- - Spring Tutorial For Beginners - using Maven and Eclipse : https://www.youtube.com/watch?v=24rGqtxuLhc
- - Spring Dependency Injection - with Unit Testing : https://www.youtube.com/watch?v=bc7frTK8LhI
- - Spring AOP Tutorial - with Aspectj Examples : https://www.youtube.com/watch?v=Og9Fyew8ltQ
- - Spring JDBC Tutorial  - with Examples : https://www.youtube.com/watch?v=1WgsDP10iqw
- - Complete Course on Udemy : https://www.udemy.com/spring-tutorial-for-beginners/
+ - YouTube
+   - Spring Tutorial For Beginners - using Maven and Eclipse : https://www.youtube.com/watch?v=24rGqtxuLhc
+   - Spring Dependency Injection - with Unit Testing : https://www.youtube.com/watch?v=bc7frTK8LhI
+   - Spring AOP Tutorial - with Aspectj Examples : https://www.youtube.com/watch?v=Og9Fyew8ltQ
+   - Spring JDBC Tutorial  - with Examples : https://www.youtube.com/watch?v=1WgsDP10iqw
+ - Udemy
+   - Complete Course on Udemy : https://www.udemy.com/spring-tutorial-for-beginners/
 
 ##TOC
 - [Running Examples](#running-examples)
