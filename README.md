@@ -93,16 +93,25 @@ The things discussed here are dependent on one another. Unit Testing builds up L
 - Test
 - XML
 
-###Section 8 Spring in Real World
-- Validation
-- Transaction Management
-- Logging
-- Hibernate
+##Spring MVC
 
-###Section 9 Let's meet again
-- BOM
-- Maven Archetypes
-- Conclusion
+###Steps 1 to 7 - Build a normal Web Application
+- Understand Basics of HTTP 
+- HttpRequest - GET/POST, Request Parameters
+- HTTP Response - Response Status - 404,200,500 etc
+- Introduction to JSP, Servlets,  Scriptlets and EL
+- HTML Form -  Method, Action & Form Data
+- Understand Basics of using Maven, Tomcat and Eclipse
+- Using Request Attributes for passing Model between Servlet and View
+
+###Steps 11 to XX : Use Spring MVC to Build Your First Web Application
+- Step 11 : Configure application to use Spring MVC
+- Step 12 : First Spring MVC Controller, @ResponseBody, @Controller
+- Step 13 : Redirect to Login JSP - LoginController, @ResponseBody and View Resolver
+- Step 14 : DispatcherServlet and Log4j
+- Step 15 : Show userid and password on the welcome page - ModelMap and @RequestParam 
+- Step 16 : LoginService and Remove all JEE Servlets based code
+- Step 17 : Spring Auto-wiring and Dependency Management - @Autowired and @Service
 
 ##About in28Minutes
 - At in28Minutes, we ask ourselves one question everyday. How do we create more effective trainings?
