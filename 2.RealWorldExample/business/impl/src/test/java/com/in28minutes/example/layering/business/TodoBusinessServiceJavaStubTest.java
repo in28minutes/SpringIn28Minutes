@@ -22,6 +22,10 @@ import com.in28minutes.example.layering.model.api.client.Todo;
 class SpringTestContext {
 }
 
+// 1. We need to test using Spring
+// 2. How do we tell Spring to use specific Configuration
+// 3. How do autowire the TodoBusinessService
+// 4. How do we auto wire TodoDataServiceStub
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringTestContext.class)
 public class TodoBusinessServiceJavaStubTest {

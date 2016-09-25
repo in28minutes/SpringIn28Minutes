@@ -12,6 +12,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.in28minutes.example.spring.business.examples.HiService;
 
+//Top Spring Annotations
+//Component/Service, Autowired, Configuration, ComponentScan
+//RunWith, ContextConfiguration
+
 @Configuration
 @ComponentScan(basePackages = "com.in28minutes.example.spring.business.examples")
 class JavaTestContext {

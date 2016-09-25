@@ -8,6 +8,8 @@ import java.sql.Statement;
 public class HsqlDatabase {
 	public Connection conn;
 
+	// Connecting to database =>
+	// Executing Query
 	public HsqlDatabase() {
 		try {
 			loadJdbcDriverForHsqlDb();

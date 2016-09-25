@@ -11,7 +11,7 @@ public class Todo {
 	}
 
 	public Todo(int id, String description, boolean isDone) {
-		this();
+		super();
 		this.id = id;
 		this.description = description;
 		this.isDone = isDone;
