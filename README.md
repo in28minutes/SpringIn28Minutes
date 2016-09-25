@@ -104,7 +104,7 @@ The things discussed here are dependent on one another. Unit Testing builds up L
 - Understand Basics of using Maven, Tomcat and Eclipse
 - Using Request Attributes for passing Model between Servlet and View
 
-###Steps 11 to XX : Use Spring MVC to Build Your First Web Application
+###Steps 11 to 17 : Use Spring MVC to Build Your First Web Application
 - Step 11 : Configure application to use Spring MVC
 - Step 12 : First Spring MVC Controller, @ResponseBody, @Controller
 - Step 13 : Redirect to Login JSP - LoginController, @ResponseBody and View Resolver
