@@ -45,9 +45,9 @@ public class TodoDataServiceSpringJdbc {
 		}
 	}
 
-	private void insertTodo(Todo todo) {
-		jdbcTemplate.update(INSERT_TODO_QUERY, todo.getDescription(),
-				todo.isDone());
+	private void insertTodo(Todo bean) {
+		jdbcTemplate.update(INSERT_TODO_QUERY, bean.getDescription(),
+				bean.isDone());
 	}
 
 	public void deleteTodo(int id) {

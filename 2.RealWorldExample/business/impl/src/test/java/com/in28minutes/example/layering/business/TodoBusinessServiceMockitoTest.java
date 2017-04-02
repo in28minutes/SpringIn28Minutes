@@ -48,8 +48,6 @@ public class TodoBusinessServiceMockitoTest {
 		List<Todo> filteredTodos = todoBs
 				.retrieveTodosRelatedToSpring("dummyUser");
 
-		System.out.println(filteredTodos);
-
 		assertEquals(2, filteredTodos.size());
 	}
 }
