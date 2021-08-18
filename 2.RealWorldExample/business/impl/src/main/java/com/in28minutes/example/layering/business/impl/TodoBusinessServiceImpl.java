@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.in28minutes.example.layering.business.api.TodoBusinessService;
 import com.in28minutes.example.layering.data.api.TodoDataService;
 import com.in28minutes.example.layering.model.api.client.Todo;
 
-@Component
+@Service
 public class TodoBusinessServiceImpl implements TodoBusinessService {
 
 	@Autowired
