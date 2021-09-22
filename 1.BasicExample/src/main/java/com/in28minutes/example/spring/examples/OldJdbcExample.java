@@ -9,7 +9,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 //Employees
-//DataSource => Db Connection
+//DataSource =>      Db Connection
 
 public class OldJdbcExample {
 
