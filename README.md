@@ -134,7 +134,7 @@ The things discussed here are dependent on one another. Unit Testing builds up L
 
 At in28Minutes, we ask ourselves one question everyday
 > How do we create more amazing course experiences? 
-> We use 80-20 Rule. We discuss 20% things used 80% of time in depth.
+> We use 80-20 Rule. We discuss 20% things used 80% of time in depth
 
 We are creating amazing learning experiences for learning Spring Boot with AWS, Azure, GCP, Docker, Kubernetes and Full Stack. 300,000 Learners rely on our expertise.  [Find out more.... ](https://github.com/in28minutes/learn#best-selling-courses)
 
